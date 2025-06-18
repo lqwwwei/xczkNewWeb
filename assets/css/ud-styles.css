@@ -761,6 +761,7 @@ p {
   margin-bottom: 12px;
 }
 
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ud-single-feature .ud-feature-title {
     font-size: 18px;
@@ -773,7 +774,29 @@ p {
   line-height: 24px;
   margin-bottom: 40px;
 }
+@media (max-width: 1400px) {
+  .ud-single-feature .ud-feature-desc {
+    font-size: 14px;
+   line-height: 24px;
+  
+  }
+  
+  .ud-single-feature .ud-feature-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .ud-single-feature .ud-feature-icon {
+    margin-bottom: 20px;
+  }
+}
 
+@media (max-width: 991px) {
+  .ud-single-feature .ud-feature-desc {
+    font-size: 13px;
+     line-height: 24px;
+  }
+}
 .ud-single-feature .ud-feature-link {
   font-weight: 500;
   color: var(--body-color);
@@ -782,6 +805,7 @@ p {
 .ud-single-feature .ud-feature-link:hover {
   color: var(--primary-color);
 }
+
 
 /* ===== About CSS ===== */
 .ud-about {
@@ -2082,9 +2106,31 @@ p {
 .ud-blog-details-content {
   padding-top: 10px;
 }
-.ud-blog-details-content img{
- display: block; /* 将图片转为块级元素 */
-  margin: 0 auto; /* 水平居中 */
+/* .ud-blog-details-content img{
+ display: block;  
+  margin: 0 auto;  
+}  */
+.ud-blog-details-case{
+  display: flex;
+   justify-content:space-between
+}
+ .ud-blog-details-content-left{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 500px;
+}
+ .ud-blog-details-right{
+ margin-left: 50px;
+}
+ .ud-blog-details-content-right img{
+  height: 300px;
+  /* 设置最大宽度为100%确保响应式 */
+  max-width: 100%;
+  /* 保持原始宽高比 */
+  object-fit: contain;
+  /* 添加平滑过渡效果 */
+  transition: transform 0.3s ease;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1920px), only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -2104,6 +2150,9 @@ p {
   .ud-blog-details-title {
     font-size: 26px;
     line-height: 35px;
+  }
+  .ud-blog-details-case {
+    flex-direction: column;
   }
 }
 
