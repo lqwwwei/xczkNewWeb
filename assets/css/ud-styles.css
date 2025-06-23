@@ -662,8 +662,8 @@ p {
 
 /* ===== Features CSS ===== */
 .ud-features {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 767px) {
@@ -1143,7 +1143,7 @@ p {
 
 /* ===== Testimonials CSS ===== */
 .ud-testimonials {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1937,6 +1937,11 @@ p {
   font-size: 16px;
   line-height: 28px;
 }
+.ud-single-blog .ud-blog-desc-detail {
+  font-size: 16px;
+  line-height: 28px;
+  color: black;
+}
 
 .ud-related-articles-title {
   font-weight: 800;
@@ -2118,7 +2123,8 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  width: 500px;
+  width: 50%; /* 改为百分比宽度 */
+  min-width: 300px; /* 防止内容过度挤压 */
 }
  .ud-blog-details-right{
  margin-left: 50px;
@@ -2153,6 +2159,10 @@ p {
   }
   .ud-blog-details-case {
     flex-direction: column;
+  }
+  .ud-blog-details-content-left {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
